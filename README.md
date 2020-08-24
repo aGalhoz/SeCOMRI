@@ -8,7 +8,7 @@ In this repository you can find demo data files and R scripts to reproduce
 
 ## Usage
 
-Demo trajectories of patients and staff members were created. Similarly, the hospital map used as demo can be found in the [website](https://www.translatum.tum.de/en/contact/).  
+Demo data trajectories of patients and staff members were created. Similarly, the hospital map used as demo can be found in the [website](https://www.translatum.tum.de/en/contact/). All of these files can be found in the `Data/` folder.  
 This project was conducted in [R software](https://www.r-project.org). 
 All the necessary R package dependencies are
 * dplyr
