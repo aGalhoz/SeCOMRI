@@ -22,7 +22,7 @@ All the necessary R package dependencies are
 * ggthemes
 * latticeExtra
 * magick
-* scales
+* scales  
 An adaptation of the original source code is presented with the assumption of prior data processing.
 
 ## Contact
