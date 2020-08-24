@@ -1,6 +1,9 @@
 # SeCOMRI
 
-This repository contains a demo data file and R scripts used to reproduce the static and timeline trajectory analysis of patients and staff members. 
+In this repository you can find demo data files and R scripts to reproduce 
+* static and spatio-temporal trajectory analyses of SARS-CoV-2-infected patients and staff members
+* comparison of patient mobility between positive and non-positive COVID-19 patients 
+
 
 
 
