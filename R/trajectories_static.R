@@ -12,7 +12,7 @@ ggplot(data_staff_COVID_static_plot_new, aes(x, y,color = delta.fraction)) +
   scale_colour_gradient2(low = "blue",mid= "palegreen3",high = "red",midpoint = 0,
                          breaks = c(min(data_staff_COVID_static_plot_new$delta.fraction),0,
                                     max(data_staff_COVID_static_plot_new$delta.fraction)),
-                         labels= c("Max. %COVID19 staff \n(-11.6%)",0,"Max. %COVID19 patients \n(10.3%)")) +
+                         labels= c("Max. %COVID19 staff",0,"Max. %COVID19 patients")) +
   scale_fill_distiller(palette=4, direction=1) +
   labs(title = "Overall union of staff and COVID patient distribution in hospital throughout the study",
        colour = "Delta = %COVID19 patients - %COVID19 staff") +
@@ -34,7 +34,7 @@ ggplot(data_staff_COVID_static_plot_new %>% filter(fraction.staff>0), aes(x, y))
   scale_colour_gradientn(colors = RColorBrewer::brewer.pal(9, "Blues")[4:9],
                          breaks = c(0.01,
                                     max(data_staff_COVID_static_plot_new$fraction.staff)),
-                         labels=c("Minimum \n(0%)","Maximum \n(16.8%)")) +
+                         labels=c("Minimum \n(0%)","Maximum")) +
   labs(title = "Overall staff distribution in hospital throughout the study",
        color = "Relative number of COVID19 staff") +
   xlim(1,2) +
@@ -56,7 +56,7 @@ ggplot(data_staff_COVID_static_plot_new %>% filter(fraction.patient>0),
                         labels = c("4%","8%","12%","16%"))  +
   scale_colour_gradientn(colors = RColorBrewer::brewer.pal(9, "Reds")[3:9],
                          breaks = c(0.0015,max(data_staff_COVID_static_plot_new$fraction.patient)),
-                         labels = c("Minimum \n(0%)","Maximum \n(16.2%)")) +
+                         labels = c("Minimum \n(0%)","Maximum")) +
   #geom_tile(alpha=0.55) +
   labs(title = "Overall COVID patients distribution in hospital throughout the study",
        color = "Relative number of COVID patients") +
